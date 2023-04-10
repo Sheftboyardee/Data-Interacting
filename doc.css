@@ -9,27 +9,30 @@ body {
 	font: 100% times, sans-serif;
 	line-height: 1.8em;
 	color: #555753; 
-	margin-left: 10%; 
-  	margin-right: 10%;
+	margin-left: 20%; 
+  	margin-right: 8%;
   	height: 100%;
 	}
 	
 p { 
 	margin-top: 0; 
-	text-align: left;
+    margin-left: 2%; 
+    margin-right: 2%;
+	text-align: justify;
 	}
 	
 h2 { 
-	font: bold 2em Nevis, fantasy;
-	letter-spacing: 0.1em; 
+	font: bold 2em sans-serif, times;
+    color: #292929; 
+    letter-spacing: 0.1em; 
 }
 
 h3 { 
-	font: bold normal 1.4em times, sans-serif;
+	font: bold normal 1.4em sans-serif, times;
 	letter-spacing: 0.1em; 
 	margin-bottom: 1em;
 	}
-	
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -61,8 +64,6 @@ footer a:link, footer a:visited {
 	margin-right: 0.1em; 
 	}
 
-
-/* specific divs (classes) */
 
 .small {
   font-variant: small-caps;
@@ -102,4 +103,43 @@ footer a:link, footer a:visited {
 
 }
   
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10%;
+  position: relative; 
+  text-align: center; 
+}
 
+button img {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+button span {
+  display: block;
+  padding-top: 40%;
+}
+
+.background-1 {
+    background-color: aliceblue;
+}
+
+.background-2 {
+    background-color: rgb(255, 255, 255);
+}

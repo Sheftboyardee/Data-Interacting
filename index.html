@@ -5,19 +5,63 @@
   <link rel="stylesheet" href="doc.css">
 </head>
 <body>
-  <h2>Parallel Categories</h2>
-  <iframe src="categories.html" width="100%" height="100%" frameBorder="0"></iframe>
-  <h3> Does Frequency of Voting Change With Income and Education Levels?</h3>
-  <p> According to the data, voting frequency, income, and education are clearly correlated. 
-    Individuals who stated that they "always" voted were more likely to have a college degree and make 
-    more than $75,000 per year. By contrast, people who said they "rarely/never" voted were more likely to 
-    be low-income and have only completed high school. Voters who cast sporadic ballots displayed 
-    a more balanced distribution of education and income levels. The figure shows significant evidence that people 
-    with greater levels of education were more likely to fall into the highest salary category, while 
-    people with lower levels of education tended to make less money. </p>
+    <div class="sidebar">
+        <button onclick="scrollToCategories()">
+          <img src="categories_icon.png" alt="Parallel Categories Icon">
+          <span><b>Parallel Categories</b></span>
+        </button>
+        <button onclick="scrollToBubble()">
+          <img src="bubble_icon.png" alt="Bubble Chart Icon">
+          <span><b>Bubble Chart</b></span>
+        </button>
+        <button onclick="scrollToMap()">
+          <img src="choropleth_icon.png" alt="Choropleth Map Icon">
+          <span><b>Choropleth Map</b></span>
+        </button>
+      </div>
+  
+    <h2>Parallel Categories</h2>
+        <iframe id="categories" src="categories.html" width="100%" height="100%" frameBorder="0"></iframe>
+    <h3> Does Frequency of Voting Change With Income and Education Levels?</h3>
+    <p> According to the data, voting frequency, income, and education are clearly correlated. 
+      Individuals who stated that they "always" voted were more likely to have a college degree and make 
+      more than $75,000 per year. By contrast, people who said they "rarely/never" voted were more likely to 
+      be low-income and have only completed high school. Voters who cast sporadic ballots displayed 
+      a more balanced distribution of education and income levels. The figure shows significant evidence that people 
+      with greater levels of education were more likely to fall into the highest salary category, while 
+      people with lower levels of education tended fall into the opposite category. </p>
+    
+    <hr>
+    <h2>Bubble Chart</h2>
+        <iframe id="bubble" src="bubble.html" width="100%" height="100%" frameBorder="0"></iframe>
+    <h3>How Did Voter Turnout and Absentee Voting Change in Virginia General Elections From 2014 to 2022? </h3>
+    <p> The years 2016 and 2020 saw increased in-person voting turn outs when compared with the rest of the data.
+         Particularly, 2020 saw dramatic growth in voter turnout. When comparing 2016 and 2020, the latter saw a 
+         dramatic increase of absentee ballots as well. The year that may stand out the most to a keen eye is 2018. 
+         This was not the highest voting year by any means (that would be 2020), but it featured some interesting details.
+          Contained in that year’s data are multiple regions with over 100% voting turnouts. This presumably has to do 
+          with the status of a voter being active or inactive as it pertains to whether the state thinks you have moved 
+          away. Inactive voters who are still eligible to vote push the count over 100%. </p>
+    <hr>
+    <h2>Choropleth Map</h2>
+        <iframe id="map" src="map.html" width="100%" height="100%" frameBorder="0"></iframe>
+    <h3> What Did Voter Turnout Look Like in Cities and Counties in Virginia in the 2022 General Election?</h3>
+    <p> Among the counties in Virginia, those in the general Northern regions tended to have higher voter turnout. 
+        Highland, Madison, and Rappahannock are examples of counties with higher voter turnout in 2022. Likewise, 
+        counties like Buchanan in the Southwest ranked lowest among voter turnout rates. </p>
+    <br>
+
+  <script>
+    function scrollToCategories() {
+      window.scrollTo({top:document.querySelector('#categories').offsetTop, behavior:'smooth'});
+    }
+    function scrollToBubble() {
+      window.scrollTo({top:document.querySelector('#bubble').offsetTop, behavior:'smooth'});
+    }
+    function scrollToMap() {
+      window.scrollTo({top:document.querySelector('#map').offsetTop, behavior:'smooth'});
+    }
+  </script>
   
 </body>
 </html>
-
-
-
