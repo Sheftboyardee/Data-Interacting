@@ -14,7 +14,7 @@
           <img src="icons/bubble_icon.png" alt="Bubble Chart Icon">
           <span><b>Bubble Chart</b></span>
         </button>
-        <button onclick="scrollToMap()">
+        <button onclick="scroll('#map')">
           <img src="icons/choropleth_icon.png" alt="Choropleth Map Icon">
           <span><b>Choropleth Map</b></span>
         </button>
@@ -60,6 +60,9 @@
     }
     function scrollToMap() {
       window.scrollTo({top:document.querySelector('#map').offsetTop, behavior:'smooth'});
+    }
+    function scroll(location) {
+      window.scrollTo({top:document.querySelector(location).offsetTop, behavior:'smooth'});
     }
   </script>
   
