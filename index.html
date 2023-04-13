@@ -6,11 +6,11 @@
 </head>
 <body>
     <div class="sidebar">
-        <button onclick="scrollToCategories()">
+        <button onclick="scroll('#categories')">
           <img src="icons/categories_icon.png" alt="Parallel Categories Icon">
           <span><b>Parallel Categories</b></span>
         </button>
-        <button onclick="scrollToBubble()">
+        <button onclick="scroll('#bubble')">
           <img src="icons/bubble_icon.png" alt="Bubble Chart Icon">
           <span><b>Bubble Chart</b></span>
         </button>
@@ -52,15 +52,6 @@
     <br>
 
   <script>
-    function scrollToCategories() {
-      window.scrollTo({top:document.querySelector('#categories').offsetTop, behavior:'smooth'});
-    }
-    function scrollToBubble() {
-      window.scrollTo({top:document.querySelector('#bubble').offsetTop, behavior:'smooth'});
-    }
-    function scrollToMap() {
-      window.scrollTo({top:document.querySelector('#map').offsetTop, behavior:'smooth'});
-    }
     function scroll(location) {
       window.scrollTo({top:document.querySelector(location).offsetTop, behavior:'smooth'});
     }
