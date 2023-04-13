@@ -1,3 +1,3 @@
-# Interacting with data using plotly, folium, and HTML/CSS
+# Interacting with data using plotly and folium
 ---
 ### https://sheftboyardee.github.io/Data-Interacting/
