@@ -6,15 +6,15 @@
 </head>
 <body>
     <div class="sidebar">
-        <button onclick="scroll('#categories')">
+        <button onclick="scrollToElement('categories')">
           <img src="icons/categories_icon.png" alt="Parallel Categories Icon">
           <span><b>Parallel Categories</b></span>
         </button>
-        <button onclick="scroll('#bubble')">
+        <button onclick="scrollToElement('bubble')">
           <img src="icons/bubble_icon.png" alt="Bubble Chart Icon">
           <span><b>Bubble Chart</b></span>
         </button>
-        <button onclick="scroll('#map')">
+        <button onclick="scrollToElement('map')">
           <img src="icons/choropleth_icon.png" alt="Choropleth Map Icon">
           <span><b>Choropleth Map</b></span>
         </button>
@@ -52,8 +52,8 @@
     <br>
 
   <script>
-    function scroll(location) {
-      window.scrollTo({top:document.querySelector(location).offsetTop, behavior:'smooth'});
+    function scrollToElement(elementId) {
+      window.scrollTo({top:document.querySelector(`#${elementId}`).offsetTop, behavior:'smooth'});
     }
   </script>
   
